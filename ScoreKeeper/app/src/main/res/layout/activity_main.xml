@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mohamed_araby.scorekeeper.MainActivity"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:drawableLeft="@drawable/us"
+            android:gravity="center"
+            android:text="Guestes"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/guest6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text=" Touch Down +6     "
+            android:textColor="@android:color/white"
+            android:onClick="Gplus_6"
+            />
+
+        <Button
+            android:id="@+id/guest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text=" Extra point +1    "
+            android:textColor="@android:color/white"
+            android:onClick="Gplus_1"
+            />
+
+        <Button
+            android:id="@+id/guest3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text=" Field Goal +3     "
+            android:textColor="@android:color/white"
+            android:onClick="Gplus_3"
+            />
+
+
+        <Button
+            android:id="@+id/guest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text="S afety +2     "
+            android:textColor="@android:color/white"
+            android:onClick="Gplus_2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="40dp"
+            android:drawableLeft="@drawable/egypt"
+            android:gravity="center"
+            android:text="Home"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="0"
+            android:textSize="50sp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/home6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text=" Touch Down +6     "
+            android:onClick="Hplus_6"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/home1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text=" Extra point +1    "
+android:onClick="Hplus_1"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/home3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text=" Field Goal +3     "
+
+            android:textColor="@android:color/white"
+            android:onClick="Hplus_3"/>
+
+        <Button
+            android:id="@+id/home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:text=" Safety +2     "
+            android:onClick="Hplus_2"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="140dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:minWidth="100dp"
+        android:text="Reset"
+        android:onClick="Reset"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
